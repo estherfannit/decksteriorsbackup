@@ -141,12 +141,6 @@
 <!-- Injecting site-wide to the head -->
 
 
-<script data-swh-uuid="f793f27d292a459d97829ae2596175db">
-
-    !function(e,t,n,i,p,s,a,c,o){e[p]||((a=e[p]=function(){a.process?a.process.apply(a,arguments):a.queue.push(arguments)}).queue=[],a.t=1*new Date,(c=t.createElement(n)).async=1,c.src="//cdn.ad360.media/js/ad360pixelevent.min.js?t="+864e5*Math.ceil(new Date/864e5),(o=t.getElementsByTagName(n)[0]).parentNode.insertBefore(c,o))}(window,document,"script",0,"ad360"),            ad360("init","9e1e576f-81c9-49f8-b660-3b129aea2eb0"),ad360("event","1c495ed4-9f85-45f6-b48e-b91492a646d8");
-
-</script>
-
 <meta name="google-site-verification" content="29zhiGdstH27TLmPo0tmFCmwxCvQ0i-VLvE0JwxrSBw" data-swh-uuid="3ca50eb0bfe741eb9ec60bb012a63fa4"/>
 
 
@@ -172,52 +166,6 @@
     var _gaq = _gaq || [];
     var _dm_insite = [];
 </script>
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDF6MNT7FF"></script>
-
-<script type="text/javascript" id="d_track_ga">
-    window.dataLayer = window.dataLayer || [];
-    _dm_gaq.siteAlias = '9a6213d3';
-    _dm_gaq.externalGaqID = 'non-empty';
-
-    function gtag() { dataLayer.push(arguments); }
-
-    function pushInsiteImpressions(id) {
-        _dm_insite.forEach((rule) => {
-            _dm_gaq.pushEvent(id, 'insite_impression', 'insite', rule.ruleType + '__' + rule.ruleId);
-        });
-    }
-
-    _dm_gaq.pushEvent = function(trackingId, event, category, label, value, additionalParams = {}) {
-        const eventProps = {
-            event_category: category,
-            event_label: label,
-            value,
-            ...additionalParams
-        };
-        gtag('event', event, eventProps);
-    }
-
-    gtag('js', new Date())
-
-    
-gtag('set', 'developer_id.dMDU5Nj', true);
-gtag('set', 'developer_id.dMWY5NG', true);
-gtag('config', 'G-VDF6MNT7FF', {
-    'send_page_view': false,
-    'linker': {
-        'domains': ['www.decksteriors.com']
-    }
-});
-
-    _dm_gaq.pushEvent('', 'page_view');
-
-    pushInsiteImpressions(_dm_gaq.externalGaqID);
-</script>
-
 
 
 
@@ -3192,7 +3140,7 @@ Decksteriors | All Rights Reserved</p>
     window.INSITE.device = "desktop";
 
     window.rtCommonProps = {};
-    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["runtimecollector.url"] = '';
     rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
     rtCommonProps["inlineEditGrid.snap"] =true;
     rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
